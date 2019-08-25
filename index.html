@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dominic Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+    <nav class="topbkg">
+      <ul class="left">
+        <li><a href="/main.html">Home</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="#">HDD</a></li>
+        <li><a href="#">Contact </a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <section>
+    <div class="name">
+      <h1>Disney Harley</h1>
+      <p>Web Developer</p>
+    </div>
+    <div class="showcase"></div>
+    </section>
+
+    <div class="hdd">
+      <div class="">SKILLS</div>
+      <p>Web Development</p>
+      <p>Software Development</p>
+      <p>Full Stack Developer</p>
+      <p>Web Design</p>
+    </div>
+
+    <div class="about">
+      <h1>About Me</h1>
+      <p>My Name is Disney Harley, I currently live in Bronx, NY. I prefer to go by Dominic, however you can call me what you like.
+        I am an aspiring web developer and designer. I began my journey when I was younger when I asked my mother
+        for a cell phone and she gave me a windows phone. I was hoping for an iPhone but that didnt stop me from
+        having a good phone. I then went and took the phone and put android on that phone. Although it was not apple
+        I was completely satisfied. I had always taken a interest in computers and as I got older I picked up web development
+        and coding. I plan to be a full stack web developer and a web designer. I also want to try to get into ui/ux design as well
+        as having my own business selling websites and other services as well. I plan to go to school at General Assembly to further my
+        knowledge and education on these topics. I have also already started to work on my business plan and things of that nature. My future
+        and image are very important to me and i put 100% into everything that I do.</p>
+    </div>
+
+    GitHub username:
+    <input type="text" id="username"/>
+    <button onclick="loadRepos()">Load Repos</button>
+    <ul id="repos">
+      <li>
+        <a href="{repo.html_url}">
+            {repo.full_name}
+        </a>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="box box-portfolio">
+        <a href="#">Portfolio</a>
+      </div>
+      <div class="box box-hdd">
+        <a href="#">GitHub</a>
+      </div>
+      <div class="box box-contact">
+        <a href="https://www.linkedin.com">LinkedIn</a>
+      </div>
+    </div>
+
+    <section class="subscribe">
+      <form action="">
+        <div class="subscription">
+          <h2>Subscribe to our Newsletter</h2>
+          <p>Subscribe to get all the info on HDD's lauch and anything new. Thanks for the support !</p>
+        </div>
+
+        <div class="subscription" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+          </label>
+        </div>
+
+        <div class="subscription">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+    </section>
+
+    <div class="socialblock">
+      <div class="contact">
+        <p>Contact Me: <span><a href="#" id="switch">disneyharley26@gmail.com</a></span></p>
+        <button type="button" name="button">Phone/Email</button>
+      </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
